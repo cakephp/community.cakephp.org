@@ -1,0 +1,27 @@
+{
+	"__base__": {
+		"name": "community.cakephp.org",
+		"default": false,
+		"repository_uri": "git@github.com:cakephp/community.cakephp.org.git",
+		"current_dir": "current",
+		"config_dir": "config",
+		"configs": [
+			"Config/database.php",
+			"Config/bootstrap.php",
+			"Config/core.php"
+		],
+		"delete": [
+			"Config/bootstrap.php"
+		]
+	},
+	"production": {
+		"branch": "master",
+		"site_dir": "/home/cakephp/www-live/community.cakephp.org/",
+		"default": true
+	},
+	"stage": {
+		"branch": "develop",
+		"site_dir": "/home/cakephp/www-staging/community.cakephp.org/"
+	}
+}
+
