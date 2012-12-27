@@ -1,0 +1,6 @@
+.DS_Store
+tmp
+/config/database.php
+/config/core.php
+fabfile.pyc
+
