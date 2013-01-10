@@ -26,6 +26,10 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+	Router::connect('/events', array('controller' => 'pages', 'action' => 'display', 'events'));
+	Router::connect('/get-involved', array('controller' => 'pages', 'action' => 'display', 'get_involved'));
+	Router::connect('/guidelines', array('controller' => 'pages', 'action' => 'display', 'guidelines'));
+
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

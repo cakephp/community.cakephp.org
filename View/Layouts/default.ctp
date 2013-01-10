@@ -1,61 +1,92 @@
 <?php
 /**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * Copyright 2012-2013, Cake Development Corporation (http://cakedc.com)
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       Cake.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @copyright Copyright 2012-2013, Cake Development Corporation (http://cakedc.com)
+ * @license MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
+		<?php echo $title_for_layout; ?> :: 
+		<?php echo __('CakePHP Community Center'); ?>
 	</title>
 	<?php
+		echo $this->Html->charset();
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
 		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+		echo $this->element('ie9-jumplist');
+		echo $this->Html->css('/csfnavbar/css/style');
+		echo $this->AssetCompress->css('app.css');
+		echo '<!--[if lt IE 9]>' . $this->Html->script('html5shiv') . '<![endif]-->';
 	?>
 </head>
-<body>
+<body class="js">
 	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
+		<?php echo $this->element('Csfnavbar.navbar'); ?>
+		<?php echo $this->element('layout/header'); ?>
+		<header class="masthead">
+			<div class="header-backing"></div>
+			<div class="row">
+				<h1 class="logo"><?php
+					echo $this->Html->image('cake-logo.png', array(
+						'alt' => 'CakePHP : the rapid development php framework',
+						'width' => '70',
+						'url' => '/'
+					));
+				?></h1>
+				<h2 class="tagline <?php echo (empty($headerButton)) ? 'no-button' : '' ?>">
+					<?php echo __('Community Center');?>
+				</h2>
+				<nav class="main-nav">
+					<ul class="navigation">
+						<li>
+							<?php echo $this->Html->link(__d('community', 'Community'), '/'); ?>
+						</li>
+						<!--
+						<li>
+							<?php echo $this->Html->link(__d('community', 'Events'), '/events'); ?>
+						</li>
+						-->
+						<li>
+							<?php echo $this->Html->link(__d('community', 'Get Involved'), '/get-involved'); ?>
+						</li>
+						<li>
+							<?php echo $this->Html->link(__d('community', 'Guidelines'), '/guidelines'); ?>
+						</li>
+					</ul>
+				</nav>
+				<?php 
+				if (!empty($headerButton)):
+					echo $headerButton;
+				endif;
+				?>
+			</div>
+		</header>
 		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
+			<!--nocache-->
+			<div class="row">
+				<?php echo $this->Session->flash('auth', array('params' => array('class' => 'alert-box'))); ?>
+			</div>
+			<div class="row">
+				<?php echo $this->Session->flash('flash', array('params' => array('class' => 'alert-box'))); ?>
+			</div>
+			<!--/nocache-->
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
+		<div class="footer-push"></div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php
+		echo $this->element('footer');
+		echo $this->AssetCompress->script('app.js');
+		echo $this->AssetCompress->includeJs();
+		echo $this->fetch('scripts');
+		echo $this->Js->writeBuffer();
+	?>
 </body>
 </html>

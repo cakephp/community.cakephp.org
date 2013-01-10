@@ -32,4 +32,44 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+
+/**
+ * Components
+ *
+ * @var array
+ * @access public
+ */
+	public $components = array(
+		'RequestHandler',
+		'Session',
+		'Cookie',
+		'DebugKit.Toolbar'
+	);
+
+/**
+ * Helpers
+ *
+ * @var array
+ * @access public
+ */
+	public $helpers = array(
+		'Session', 'Html', 'Form',
+		'AssetCompress.AssetCompress',
+		'Js' => 'Jquery',
+		'Time',
+		'Text'
+	);
+
+/**
+ * Before filter callback
+ *
+ * @return void
+ * @access public
+ */
+	public function beforeFilter() {
+		$this->set('host', env('HTTP_HOST'));
+		$this->set('title_for_layout', 'CakePHP Community Center');
+	}
 }
+
