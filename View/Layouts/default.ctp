@@ -46,22 +46,22 @@
 				<nav class="main-nav">
 					<ul class="navigation">
 						<li>
-							<?php echo $this->Html->link(__d('community', 'Community'), '/'); ?>
+							<?php echo $this->Html->link(__('Community'), '/'); ?>
 						</li>
 						<!--
 						<li>
-							<?php echo $this->Html->link(__d('community', 'Events'), '/events'); ?>
+							<?php echo $this->Html->link(__('Events'), array('controller' => 'pages', 'action' => 'display', 'events')); ?>
 						</li>
 						-->
 						<li>
-							<?php echo $this->Html->link(__d('community', 'Get Involved'), '/get-involved'); ?>
+							<?php echo $this->Html->link(__('Get Involved'), array('controller' => 'pages', 'action' => 'display', 'get_involved')); ?>
 						</li>
 						<li>
-							<?php echo $this->Html->link(__d('community', 'Guidelines'), '/guidelines'); ?>
+							<?php echo $this->Html->link(__('Guidelines'), array('controller' => 'pages', 'action' => 'display', 'guidelines')); ?>
 						</li>
 					</ul>
 				</nav>
-				<?php 
+				<?php
 				if (!empty($headerButton)):
 					echo $headerButton;
 				endif;

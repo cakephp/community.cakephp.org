@@ -14,26 +14,18 @@
 		<nav class="six columns">
 			<ul class="footer-nav">
 				<li>
-					<?php echo $this->Html->link(
-						__d('community', 'Community'),
-						array('plugin' => null, 'controller' => 'articles', 'action' => 'index', 'admin' => false)); ?>
+					<?php echo $this->Html->link(__('Community'), '/'); ?>
 				</li>
 				<!--
 				<li>
-					<?php echo $this->Html->link(
-						__d('community', 'Events'),
-						array('plugin' => null, 'controller' => 'articles', 'action' => 'index', 'admin' => false)); ?>
+					<?php echo $this->Html->link(__('Events'), array('controller' => 'pages', 'action' => 'display', 'events')); ?>
 				</li>
 				-->
 				<li>
-					<?php echo $this->Html->link(
-						__d('community', 'Get Involved'),
-						array('plugin' => null, 'controller' => 'articles', 'action' => 'index', 'admin' => false)); ?>
+					<?php echo $this->Html->link(__('Get Involved'), array('controller' => 'pages', 'action' => 'display', 'get_involved')); ?>
 				</li>
 				<li>
-					<?php echo $this->Html->link(
-						__d('community', 'Guidelines'),
-						array('plugin' => null, 'controller' => 'blazon_categories', 'action' => 'index', 'admin' => false)); ?>
+					<?php echo $this->Html->link(__('Guidelines'), array('controller' => 'pages', 'action' => 'display', 'guidelines')); ?>
 				</li>
 			</ul>
 		</nav>
