@@ -29,7 +29,10 @@
 			<?php echo __('<a href="http://webchat.freenode.net/?channels=cakephp&uio=MT1mYWxzZSY5PXRydWUmMTE9MjQ2b8" target="_blank" title="CakePHP IRC Channel on Freenode (web client)">IRC</a>: Join us in the #cakephp IRC channel'); ?>
 		</li>
 		<li>
-			<?php echo __('<a href="http://ask.cakephp.org" target="_blank" title="CakePHP Questions and Answers">Q&A</a>: The place for all questions and answers regarding development'); ?>
+			<?php echo __('<a href="http://cakephp.lighthouseapp.com" target="_blank" title="CakePHP Lighthouse App">Issues</a>: Report issues, help fix bugs or implement features'); ?>
+		</li>
+		<li>
+			<?php echo __('<a href="http://bakery.cakephp.org" target="_blank" title="The Bakery">The Bakery</a>: Find news and articles on many topics regarding <strong>CakePHP</strong>'); ?>
 		</li>
 		<li>
 			<?php echo __('<a href="http://stackoverflow.com/tags/cakephp" target="_blank" title="CakePHP discussions on StackOverflow">StackOverflow</a>: Get your issues resolved by the open source community'); ?>
@@ -38,22 +41,19 @@
 			<?php echo __('<a href="http://www.quora.com/CakePHP" target="_blank" title="CakePHP questions and answers on Quora">Quora</a>: Discuss various aspects of the framework in collaboration with others'); ?>
 		</li>
 		<li>
-			<?php echo __('<a href="http://bakery.cakephp.org" target="_blank" title="The Bakery">The Bakery</a>: Find news and articles on many topics regarding <strong>CakePHP</strong>'); ?>
-		</li>
-		<li>
-			<?php echo __('<a href="http://tv.cakephp.org" target="_blank" title="CakePHP TV">CakePHP TV</a>: Tutorials and screencasts related to development and events'); ?>
-		</li>
-		<li>
-			<?php echo __('<a href="http://groups.google.com/group/cake-php" target="_blank" title="Official CakePHP Google Group">Google Group</a>: Official discussion group for the project'); ?>
-		</li>
-		<li>
-			<?php echo __('<a href="http://goo.gl/mSC0s" target="_blank" title="Official CakePHP Community on Google Plus">Google+ Community</a>: Official community channel for the project'); ?>
-		</li>
-		<li>
 			<?php echo __('<a href="http://www.facebook.com/groups/cake.community" target="_blank" title="Official CakePHP Group on Facebook">Facebook</a>: Official announcements from the <strong>CakePHP</strong> community'); ?>
 		</li>
 		<li>
+			<?php echo __('<a href="http://goo.gl/mSC0s" target="_blank" title="Official CakePHP Community on Google Plus">Google+</a>: Official community channel for the project'); ?>
+		</li>
+		<li>
+			<?php echo __('<a href="http://www.youtube.com/user/CakePHP" target="_blank" title="Official CakePHP Channel on YouTube">YouTube</a>: Tutorials and screencasts related to development and events'); ?>
+		</li>
+		<li>
 			<?php echo __('<a href="http://twitter.com/CakePHP" target="_blank" title="CakePHP on Twitter">Twitter</a>: Get the latest updates from around the world'); ?>
+		</li>
+		<li>
+			<?php echo __('<a href="http://groups.google.com/group/cake-php" target="_blank" title="Official CakePHP Google Group">Google Group</a>: Official discussion group for the project'); ?>
 		</li>
 	</ul>
 	<h2>
