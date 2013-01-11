@@ -613,6 +613,7 @@ div.paging div.numbers {
 	text-align: right;
 	position:relative;
 	line-height: 36px;
+	display: none;
 }
 
 .top-bar .login > img {
