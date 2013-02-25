@@ -102,6 +102,9 @@
 			<?php echo __('Distributing information and awareness'); ?>
 		</li>
 	</ul>
+	<p>
+		<?php echo $this->Html->link(__('Read more'), array('controller' => 'pages', 'action' => 'display', 'usergroups')) . __(' about existing usergroups, or how to start a new group in your region'); ?>
+	</p>
 	<h2>
 		<?php echo __('Contributing Code'); ?>
 	</h2>

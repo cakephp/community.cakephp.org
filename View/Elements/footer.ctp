@@ -27,6 +27,9 @@
 				<li>
 					<?php echo $this->Html->link(__('Guidelines'), array('controller' => 'pages', 'action' => 'display', 'guidelines')); ?>
 				</li>
+				<li>
+					<?php echo $this->Html->link(__('Usergroups'), array('controller' => 'pages', 'action' => 'display', 'usergroups')); ?>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -38,7 +41,7 @@
 				<?php
 				echo $this->Html->link(
 					__('Privacy Policy'),
-					array('admin' => false, 'prefix' => null, 'plugin' => null, 'controller' => 'pages', 'action' => 'tos')); 
+					array('admin' => false, 'prefix' => null, 'plugin' => null, 'controller' => 'pages', 'action' => 'tos'));
 				?>
 				&nbsp;
 		</div>

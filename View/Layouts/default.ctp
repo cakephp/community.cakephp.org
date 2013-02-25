@@ -13,7 +13,7 @@
 <html lang="en">
 <head>
 	<title>
-		<?php echo $title_for_layout; ?> :: 
+		<?php echo $title_for_layout; ?> ::
 		<?php echo __('CakePHP Community Center'); ?>
 	</title>
 	<?php
@@ -58,6 +58,9 @@
 						</li>
 						<li>
 							<?php echo $this->Html->link(__('Guidelines'), array('controller' => 'pages', 'action' => 'display', 'guidelines')); ?>
+						</li>
+						<li>
+							<?php echo $this->Html->link(__('Usergroups'), array('controller' => 'pages', 'action' => 'display', 'usergroups')); ?>
 						</li>
 					</ul>
 				</nav>
