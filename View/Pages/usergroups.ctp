@@ -11,51 +11,90 @@
 ?>
 <div class="row">
 	<h1>
-		<?php echo __('Local Usergroups'); ?>
+		<?php echo __('Local user groups'); ?>
 	</h1>
 	<p>
-		<?php echo __('Currently we have enthusiastic groups of <strong>CakePHP</strong> developers in the following regions:'); ?>
+		<?php echo __('We currently have enthusiastic groups of <strong>CakePHP</strong> developers in the following regions worldwide:'); ?>
 	</p>
-	<ul>
-		<li>
-			<?php echo $this->Html->link(__('France'), 'http://usergroups.cakephp.org/fr/'); ?>
-		</li>
-		<li>
-			<?php echo $this->Html->link(__('Netherlands'), 'http://usergroups.cakephp.org/nl/'); ?>
-		</li>
-	</ul>
+	<table class="usergroups-table">
+		<thead>
+			<tr>
+				<th>
+					<?php echo __('User Group'); ?>
+				</th>
+				<th>
+					<?php echo __('Region'); ?>
+				</th>
+				<th>
+					<?php echo __('Language'); ?>
+				</th>
+				<th>
+					<?php echo __('Owner'); ?>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<?php echo $this->Html->link(__('CakePHP FR'), 'http://usergroups.cakephp.org/fr'); ?>
+				</td>
+				<td>
+					<?php echo $this->Html->link(__('France'), 'http://maps.google.com/maps?q=france'); ?>
+				</td>
+				<td>
+					French
+				</td>
+				<td>
+					<?php echo $this->Html->link(__('Pierre Martin (real34)'), 'https://github.com/real34'); ?>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<?php echo $this->Html->link(__('CakePHP NL'), 'http://usergroups.cakephp.org/nl'); ?>
+				</td>
+				<td>
+					<?php echo $this->Html->link(__('Netherlands'), 'http://maps.google.com/maps?q=netherlands'); ?>
+				</td>
+				<td>
+					English
+				</td>
+				<td>
+					<?php echo $this->Html->link(__('Marc Ypes (Ceeram)'), 'https://github.com/ceeram'); ?>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 	<h2>
 		<?php echo __('Your country not listed?'); ?>
 	</h2>
 	<p>
-		<?php echo __('If you like to meet with other <strong>CakePHP</strong> developers in your region and there is no existing community, start one yourself. Also if there already is a local community, you can apply for your own usergroup space on cakephp.org'); ?>
+		<?php echo __('If you\'d like to meet with other <strong>CakePHP</strong> developers in your region, and there\'s no existing community, consider starting one yourself. If you represent a local community, apply now for your User Group\'s space on cakephp.org.'); ?>
 	</p>
 	<p>
-		<?php echo __('<strong>CakePHP</strong> can provide a complete package to get you up and running:'); ?>
+		<?php echo __('<strong>CakePHP</strong> provides a complete package to get you up and running:'); ?>
 	</p>
 	<ul>
 		<li>
-			<?php echo __('Dedicated section on cakephp.org domain'); ?>
+			<?php echo __('Dedicated location on the cakephp.org domain'); ?>
 		</li>
 		<li>
-			<?php echo __('Blog application (croogo)'); ?>
+			<?php echo __('Blog application (Croogo)'); ?>
 		</li>
 		<li>
-			<?php echo __('Discussion forum (discourse)'); ?>
+			<?php echo __('Discussion forum (Discourse)'); ?>
 		</li>
 		<li>
-			<?php echo __('Raffler app'); ?>
+			<?php echo __('Raffle application'); ?>
 		</li>
 		<li>
 			<?php echo __('Meetup.com costs covered'); ?>
 		</li>
 		<li>
-			<?php echo __('Help in any way we can to support your group'); ?>
+			<?php echo __('Help and support from the <strong>CakePHP</strong> core'); ?>
 		</li>
 	</ul>
 	<p>
-		<?php echo __('Apply for your usergroup package by sending an email to <strong>usergroups [at] cakephp.org</strong>'); ?>
+		<?php echo __('Apply for your User Group package by sending an email to <strong>usergroups [at] cakephp.org</strong>.'); ?>
 	</p>
 	<br/>
 </div>
-
