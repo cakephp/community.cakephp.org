@@ -27,7 +27,7 @@
 			<?php echo __('Join the #cakephp IRC channel and talk to developers who need help.'); ?> <strong>*</strong>
 		</li>
 		<li>
-			<?php echo __('Answer questions on platforms such and <a href="http://ask.cakephp.org" target="_blank" title="CakePHP Questions and Answers">Q&A</a>, <a href="http://stackoverflow.com/tags/cakephp" target="_blank" title="CakePHP discussions on StackOverflow">StackOverflow</a> and <a href="http://www.quora.com/CakePHP" target="_blank" title="CakePHP questions and answers on Quora">Quora</a>.'); ?>
+			<?php echo __('Answer questions on platforms such as <a href="http://stackoverflow.com/tags/cakephp" target="_blank" title="CakePHP discussions on StackOverflow">StackOverflow</a> and <a href="http://www.quora.com/CakePHP" target="_blank" title="CakePHP questions and answers on Quora">Quora</a>.'); ?>
 		</li>
 		<li>
 			<?php echo __('Comment on posts asking for help with a specific problem.'); ?>
