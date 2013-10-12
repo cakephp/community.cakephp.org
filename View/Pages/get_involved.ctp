@@ -34,7 +34,7 @@
 		</li>
 	</ul>
 	<p>
-		<strong>*</strong> <em><?php echo __('For those who don\'t have an IRC client we have a web-based client available <a href="http://webchat.freenode.net/?channels=cakephp&uio=MT1mYWxzZSY5PXRydWUmMTE9MjQ2b8" target="_blank" title="CakePHP IRC Channel on Freenode (web client)">here</a>.'); ?></em>
+		<strong>*</strong> <em><?php echo __('For those who don\'t have an IRC client we have a web-based client available <a href="http://webchat.freenode.net/?channels=cakephp" target="_blank" title="CakePHP IRC Channel on Freenode (web client)">here</a>.'); ?></em>
 	</p>
 	<h2>
 		<?php echo __('Education and Training'); ?>
@@ -106,7 +106,7 @@
 		<?php echo __('Contributing Code'); ?>
 	</h2>
 	<p>
-		<?php echo __('If you want to contribute code for a bug fix then coordinate your patch in the comments of the ticket, either by uploading the patch file, or linking to the commit(s) for the fix. You can find a clear outline for contribution to the framework <a href="http://book.cakephp.org/2.0/en/contributing/code.html" target="_blank" title="CakePHP Contribution Guidelines">here</a>.'); ?>
+		<?php echo __('If you want to contribute code for a bug fix then coordinate your patch in the comments of the issue, either by uploading the patch file, or linking to the commit(s) for the fix. You can find a clear outline for contribution to the framework <a href="http://book.cakephp.org/2.0/en/contributing/code.html" target="_blank" title="CakePHP Contribution Guidelines">here</a>.'); ?>
 	</p>
 	<h3>
 		<?php echo __('Contributing via Patch Files.'); ?>
@@ -124,7 +124,7 @@
 		<?php echo __('Testing and Quality Assurance'); ?>
 	</h2>
 	<p>
-		<?php echo __('Filing tickets is a great way to start contributing to <strong>CakePHP</strong>. By finding and reporting issues in the code you notify the maintainers of any issues and help get them resolved. Tickets for all <strong>CakePHP</strong> projects are located at <a href="http://cakephp.lighthouseapp.com" target="_blank" title="CakePHP Lighthouse App">Lighthouse</a>.'); ?>
+		<?php echo __('Filing issues is a great way to start contributing to <strong>CakePHP</strong>. By finding and reporting issues in the code you notify the maintainers of any issues and help get them resolved. Issues for all <strong>CakePHP</strong> projects are located on <a href="https://github.com/cakephp/cakephp/issues" target="_blank" title="CakePHP issues on GitHub">GitHub</a>.'); ?>
 	</p>
 	<h3>
 		<?php echo __('Found a Bug?'); ?>
@@ -134,36 +134,37 @@
 	</p>
 	<ul>
 		<li>
-			<?php echo __('Search for a similar <a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/tickets?q=ITS%2BBROKEN" target="_blank" title="CakePHP tickets at Lighthouse">existing ticket</a>.'); ?>
+			<?php echo __('Search for a similar or <a href="https://github.com/cakephp/cakephp/issues?labels=Defect&state=open" target="_blank" title="CakePHP issues on GitHub">existing issue</a>.'); ?>
 		</li>
 		<li>
-			<?php echo __('Create a <a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/tickets/new" target="_blank" title="Create a CakePHP ticket at Lighthouse">new ticket</a> if you\'re sure it doesn\'t already exist OR update the existing ticket.'); ?>
+			<?php echo __('Create a <a href="https://github.com/cakephp/cakephp/issues/new" target="_blank" title="Create a CakePHP issue on GitHub">new issue</a> if you\'re sure it doesn\'t already exist OR update the existing issue.'); ?>
 		</li>
 		<li>
 			<?php echo __('Add detailed instructions on how to reproduce the bug. This could be in the form of test cases or a code snippet that demonstrates the issue. Not having a way to reproduce an issue, means its less likely to get fixed.'); ?>
 		</li>
 	</ul>
 	<h3>
-		<?php echo __('New Tickets That Need Triaging'); ?>
+		<?php echo __('New Issues That Need Triaging'); ?>
 	</h3>
 	<p>
-		<?php echo __('All <a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/tickets/bins/93362" target="_blank" title="CakePHP new tickets at Lighthouse">new tickets</a> need to be triaged and have the correct tags, as well as having a milestone assigned to them. You can help by looking at new tickets and adding the correct tags. Additionally, confirming or asking for more information on unclear tickets doesn\'t take much time, and helps speed up the process.'); ?>
+		<?php echo __('All <a href="https://github.com/cakephp/cakephp/issues" target="_blank" title="CakePHP new issues on GitHub">new issues</a> need to be triaged and have the correct tags, as well as having a milestone assigned to them. You can help by looking at new issues and adding the correct tags. Additionally, confirming or asking for more information on unclear issues doesn\'t take much time, and helps speed up the process.'); ?>
 	</p>
 	<p>
-		<?php echo __('Tags for tickets usually contain which classes, methods, and other generic properties are involved. The tags <em>defect</em>, <em>enhancement</em> and <em>rfc</em> move tickets into related bins.'); ?>
+		<?php echo __('Tags for issues usually contain which classes, methods, and other generic properties are involved. The tags <em>Defect</em>, <em>Enhancement</em> and <em>RFC</em> move issues into related bins.'); ?>
 	</p>
 	<h3>
-		<?php echo __('Confirm or Invalidate Existing Tickets That Need a Way to Reproduce'); ?>
+		<?php echo __('Confirm or Invalidate Existing Issues That Need a Way to Reproduce'); ?>
 	</h3>
 	<p>
-		<?php echo __('If a ticket cannot be easily reproduced, or is unclear, it will be set to hold. Tickets on hold generally need a way to be confirmed or require additional information. You can help by finding out ways to reproduce tickets, or prodding ticket authors for more information. Tickets that are on hold can be found <a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/tickets/bins/146132" target="_blank" title="CakePHP tickets on hold at Lighthouse">here</a>.'); ?>
+		<?php echo __('If an issue cannot be easily reproduced, or is unclear, it will be set to hold. Issues on hold generally need a way to be confirmed or require additional information. You can help by finding out ways to reproduce issues, or prodding issue authors for more information. Issues that are on hold can be found <a href="https://github.com/cakephp/cakephp/issues?labels=On+hold&state=open" target="_blank" title="CakePHP issues on hold on GitHub">here</a>.'); ?>
 	</p>
 	<h3>
-		<?php echo __('Bug Tickets for Maintenance Releases'); ?>
+		<?php echo __('Bug Issues for Maintenance Releases'); ?>
 	</h3>
 	<p>
-		<?php echo __('Existing releases usually have a few issues open against them. These issues generally need patches and test cases created for them, so they can be resolved. Preparing patches for <a href="http://cakephp.lighthouseapp.com/42648-cakephp/tickets/bins/90069" target="_blank" title="CakePHP open and unresolved issues at Lighthouse">open unresolved issues</a> is a great way to get involved with <strong>CakePHP</strong>, and is one of the first steps to becoming a core contributor. If you\'re interested in a particular version, there are lists of open unassigned tickets for.'); ?>
+		<?php echo __('Existing releases usually have a few issues open against them. These issues generally need patches and test cases created for them, so they can be resolved. Preparing patches for <a href="https://github.com/cakephp/cakephp/issues?labels=&state=open" target="_blank" title="CakePHP open and unresolved issues on GitHub">open unresolved issues</a> is a great way to get involved with <strong>CakePHP</strong>, and is one of the first steps to becoming a core contributor.'); ?>
 	</p>
+	<!--
 	<ul>
 		<li>
 			<?php echo __('<a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/tickets/bins/92789" target="_blank" title="1.3.x unassigned open tickets">1.3.x unassigned open tickets</a>'); ?>
@@ -172,11 +173,12 @@
 			<?php echo __('<a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/tickets/bins/228812" target="_blank" title="2.0.x unassigned open tickets">2.0.x unassigned open tickets</a>'); ?>
 		</li>
 	</ul>
+	-->
 	<h3>
 		<?php echo __('Features and Enhancements for Future Releases'); ?>
 	</h3>
 	<p>
-		<?php echo __('We are currently working towards the <a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/milestones/139708-300" target="_blank" title="CakePHP 3.0 milestone">3.0 milestone</a>. There are still a number of incomplete tasks and <a href="http://cakephp.lighthouseapp.com/projects/42648-cakephp/tickets/bins/418936" target="_blank" title="CakePHP 3.0 unresolved tickets">unresolved tickets</a>. If a ticket has been moved into the 3.0 milestone it is planned for inclusion in the release. Tickets are moved into this milestone based on community feedback and the core team\'s plans. If you plan on contributing a feature, please also include relevant test cases for the feature. We want to keep <strong>CakePHP</strong> as bug free as possible, and test cases have proven to help immensely. If you submit features without test cases, and no documentation it is highly unlikely it will be merged in.'); ?>
+		<?php echo __('We are currently working towards the <a href="https://github.com/cakephp/cakephp/issues?milestone=7" target="_blank" title="CakePHP 3.0 milestone">3.0 milestone</a>. There are still a number of incomplete tasks and <a href="https://github.com/cakephp/cakephp/issues?milestone=7&state=open" target="_blank" title="CakePHP 3.0 unresolved issues">unresolved issues</a>. If an issue has been moved into the 3.0 milestone, it is planned for inclusion in the release. Issues are moved into this milestone based on community feedback and the core team\'s plans. If you plan on contributing a feature, please also include relevant test cases for the feature. We want to keep <strong>CakePHP</strong> as bug free as possible, and test cases have proven to help immensely. If you submit features without test cases, and no documentation it is highly unlikely it will be merged in.'); ?>
 	</p>
 	<p>
 		<?php echo __('<strong>CakePHP</strong> is <a href="http://en.wikipedia.org/wiki/Continuous_integration" target="_blank" title="Continuous Integration">continuously integrated</a>, so you can check the status of the <a href="http://ci.cakephp.org" target="_blank" title="CakePHP CI">various builds</a> on the <strong>Jenkins</strong> server at any time.'); ?>
@@ -185,7 +187,7 @@
 		<?php echo __('Documentation'); ?>
 	</h2>
 	<p>
-		<?php echo __('Documentation is another excellent way to start getting involved with <strong>CakePHP</strong>. We have two primary forms of documentation, the <a href="http://api.cakephp.org" target="_blank" title="CakePHP API">API</a> and the <a href="http://book.cakephp.org" target="_blank" title="CakePHP CookBook">CookBook</a>. The API is generated from the source code, so if you find an inaccuracy or issue with the API documentation, you can file a patch against the source code. The CookBook is a community edited and moderated wiki. Once you have a <strong>Bakery</strong> account you can edit and add any documentation you think is useful. Also, submitting an article to the Bakery is a good way to share your code, processes, and experiences with <strong>CakePHP</strong>. Submissions are moderated and reviewed before publishing.'); ?>
+		<?php echo __('Documentation is another excellent way to start getting involved with <strong>CakePHP</strong>. We have two primary forms of documentation, the <a href="http://api.cakephp.org" target="_blank" title="CakePHP API">API</a> and the <a href="http://book.cakephp.org" target="_blank" title="CakePHP CookBook">CookBook</a>. The API is generated from the source code, so if you find an inaccuracy or issue with the API documentation, you can file a patch against the <a href="https://github.com/cakephp/cakephp" target="_blank" title="CakePHP official repository on GitHub">source code</a>. The CookBook is a community managed documentation source which can also be found on <a href="https://github.com/cakephp/docs" target="_blank" title="CakePHP docs repository on GitHub">GitHub</a>. Guidelines on contributing to the documentation can be reviewed <a href="http://book.cakephp.org/2.0/en/contributing/documentation.html" target="_blank" title="Contributing to the CakePHP documentation">here</a>.'); ?>
 	</p>
 	<h2>
 		<?php echo __('Translations'); ?>
