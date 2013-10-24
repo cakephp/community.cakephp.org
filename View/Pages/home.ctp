@@ -29,7 +29,7 @@
 			<?php echo __('<a href="http://webchat.freenode.net/?channels=cakephp&uio=MT1mYWxzZSY5PXRydWUmMTE9MjQ2b8" target="_blank" title="CakePHP IRC Channel on Freenode (web client)">IRC</a>: Join us in the #cakephp IRC channel'); ?>
 		</li>
 		<li>
-			<?php echo __('<a href="http://cakephp.lighthouseapp.com" target="_blank" title="CakePHP Lighthouse App">Issues</a>: Report issues, help fix bugs or implement features'); ?>
+			<?php echo __('<a href="https://github.com/cakephp/cakephp/issues" target="_blank" title="CakePHP GitHub Issues">Issues</a>: Report issues, help fix bugs or implement features'); ?>
 		</li>
 		<li>
 			<?php echo __('<a href="http://bakery.cakephp.org" target="_blank" title="The Bakery">The Bakery</a>: Find news and articles on many topics regarding <strong>CakePHP</strong>'); ?>
