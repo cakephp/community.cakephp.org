@@ -55,6 +55,9 @@
 		<li>
 			<?php echo __('<a href="http://groups.google.com/group/cake-php" target="_blank" title="Official CakePHP Google Group">Google Group</a>: Official discussion group for the project'); ?>
 		</li>
+		<li>
+			<?php echo __('<a href="https://www.reddit.com/r/cakephp/" target="_blank" title="Official CakePHP Subreddit">CakePHP on Reddit</a>: Official Subreddit of CakePHP'); ?>
+		</li>
 	</ul>
 	<h2>
 		<?php echo __('Searching for developers or a job?'); ?>
