@@ -23,7 +23,7 @@ def deploy(environment='stage'):
 	# links(deployconf, timestr)
 	fullwritable(deployconf, timestr)
 	current_link(deployconf, timestr)
-	# asset_generate(deployconf, timestr)
+	asset_generate(deployconf, timestr)
 	services(deployconf, timestr)
 
 def asset_generate(deployconf, timestr):
