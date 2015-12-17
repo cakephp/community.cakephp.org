@@ -76,6 +76,9 @@
 			<?php echo __('<a href="https://www.odesk.com/o/jobs/browse/skill/cakephp/" target="_blank" title="CakePHP jobs on oDesk">oDesk</a>: Contractors who specialize in <strong>CakePHP</strong>'); ?>
 		</li>
 		<li>
+			<?php echo __('<a href="http://cakephpjobs.com" target="_blank" title="CakePHP Jobs">CakePHPJobs</a>: CakePHP related job postings'); ?>
+		</li>
+		<li>
 			<?php echo __('<a href="http://cakexperts.com" target="_blank" title="CakeXperts projects and positions">CakeXperts</a>: Where developers and employers connect'); ?>
 		</li>
 		<li>
