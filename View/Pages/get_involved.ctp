@@ -27,6 +27,9 @@
 			<?php echo __('Join the #cakephp IRC channel and talk to developers who need help.'); ?> <strong>*</strong>
 		</li>
 		<li>
+ 			<?php echo __('<a href="http://cakesf.herokuapp.com" target="_blank" title="Slack">Slack</a>: Join <strong>CakePHP</strong> on Slack.'); ?>
+ 		</li>
+		<li>
 			<?php echo __('Answer questions on platforms such as <a href="http://stackoverflow.com/tags/cakephp" target="_blank" title="CakePHP discussions on StackOverflow">StackOverflow</a> and <a href="http://www.quora.com/CakePHP" target="_blank" title="CakePHP questions and answers on Quora">Quora</a>.'); ?>
 		</li>
 		<li>
