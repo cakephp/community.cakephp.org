@@ -29,6 +29,9 @@
 			<?php echo __('<a href="http://webchat.freenode.net/?channels=cakephp&uio=MT1mYWxzZSY5PXRydWUmMTE9MjQ2b8" target="_blank" title="CakePHP IRC Channel on Freenode (web client)">IRC</a>: Join us in the #cakephp IRC channel'); ?>
 		</li>
 		<li>
+			<?php echo __('<a href="http://cakesf.herokuapp.com" target="_blank" title="Slack">Slack</a>: Join <strong>CakePHP</strong> on Slack.'); ?>
+		</li>
+		<li>
 			<?php echo __('<a href="https://github.com/cakephp/cakephp/issues" target="_blank" title="CakePHP GitHub Issues">Issues</a>: Report issues, help fix bugs or implement features'); ?>
 		</li>
 		<li>
